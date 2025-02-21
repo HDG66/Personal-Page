@@ -224,6 +224,11 @@ body {
         border-top-color: red;
         }
 
+    #War::-webkit-media-controls-play-button{
+        background-color: crimson;
+        border-radius: 300px;
+    }
+
     #War::-webkit-media-controls-mute-button {
         background-color: crimson;
         border-radius: 50%;
