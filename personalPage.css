@@ -1,21 +1,47 @@
 body {
-    background-image: url(sidebar1.jpg), url("Dante\ &\ Vergil\ Art\ -\ Devil\ May\ Cry\ 3_\ Dante\'s\ Awakening\ Art\ Gallery.jpeg"), url(sidebar2.jpg);
-    background-size: contain, 1270px, contain;
-    background-position: left, center, right;
+    background: url(sidebar1.jpg), url(sidebar2,2.jpg), url(HitmanWall.jpg);
+    background-size: contain, contain, contain;
+    background-position: left, right, center; 
     background-repeat: no-repeat, no-repeat, no-repeat;
-    height: 100vh;
+    background-color: black;
+
+    background-size: 13vw 100%, 13vw 100%, 100%;
     
     font-family: Georgia;
     font-weight: bold;
     text-align: center;
     color: black;
-    border: 600px;
+    /* border: 600px; */
     text-shadow: rgb(26, 208, 208) 1px 0 4px, rgb(26, 208, 208) 1px 0 4px, rgb(26, 208, 208) 1px 0 4px, rgb(26, 208, 208) 1px 0 4px, rgb(26, 208, 208) 1px 0 4px;
 }
 
+/* Red Lines to the side */
+    .vl {
+        border-left: 6px solid transparent;
+        box-shadow: -8px 0px 6px 0px red;
+
+        height: 100%;
+        position: absolute;
+        left: 87.5%;
+        margin-left: -3px;
+        /* Makes so the line reaches the top of the screen */
+        top: 0;
+    }
+
+    .v2 {
+        border-left: 6px solid transparent;
+        box-shadow: 8px 0px 6px 0px red;
+
+        height: 100%;
+        position: absolute;
+        right: 87.3%;
+        margin-left: -3px;
+        top: 0;
+    }
+
 /* Text */
     h1 {
-        font-size: 60px;
+        font-size: 3.6vw;
         color: rgb(225, 234, 237);
         margin-top: 20px;
         margin-bottom: -20px;
@@ -51,8 +77,9 @@ body {
         /* Determines the density of the letters.
         For example: normal, bold, lighter, bolder, (number) */
         font-weight: bold;
-        font-size: 22px;
+        font-size: 1.4vw;
         font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Georgia;
+
         
         background: crimson;
         color: orange;
@@ -60,7 +87,7 @@ body {
         border: 3px solid orange;
         border-radius: 5px;
 
-        width: 200px;
+        width: 12vw;
 
         padding-top: 10px;
         padding-bottom: 10px;
@@ -70,7 +97,7 @@ body {
 
     #Steam {
         font-weight: bold;
-        font-size: 22px;
+        font-size: 1.4vw;
         font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Georgia;
         
         background: #1b2838;
@@ -79,7 +106,7 @@ body {
         border: 3px solid #c7d5e0;
         border-radius: 5px;
 
-        width: 200px;
+        width: 12vw;
 
         padding-top: 10px;
         padding-bottom: 10px;
@@ -90,7 +117,7 @@ body {
 
     #You {
         font-weight: bold;
-        font-size: 22px;
+        font-size: 1.4vw;
         font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Georgia;
         
         background: red;
@@ -99,7 +126,7 @@ body {
         border: 3px solid white;
         border-radius: 5px;
 
-        width: 200px;
+        width: 12vw;
 
         padding-top: 10px;
         padding-bottom: 10px;
@@ -110,7 +137,7 @@ body {
 
     #Spot {
         font-weight: bold;
-        font-size: 22px;
+        font-size: 1.4vw;
         font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Georgia;
         
         background: #1DB954;
@@ -119,7 +146,7 @@ body {
         border: 3px solid #191414;
         border-radius: 5px;
 
-        width: 200px;
+        width: 12vw;
 
         padding-top: 10px;
         padding-bottom: 10px;
@@ -183,7 +210,7 @@ body {
         padding-right: 8px;
     }
 
-    /* Valor de volument para WAR */
+/* Valor de volument para WAR */
     #War::-webkit-media-controls-panel{
         /* 0.4rem Adds a small little border to the sides */
         border: 0.4rem solid;
